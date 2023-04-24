@@ -10,14 +10,6 @@ Weather Station is a powerful and easy-to-use weather forecasting application bu
 <h3 align="center">Visit Weather Station: https://weather-station2.herokuapp.com/</h3>
 
 
-## Table of Contents
-
-1. [Features](#features)
-2. [Getting Started](#getting-started)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
-
 ## Features
 
 - Simple and user-friendly interface
