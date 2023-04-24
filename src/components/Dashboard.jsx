@@ -123,7 +123,7 @@ const Dashboard = () => {
               className={dashboardCss.zipInput}
               name="newCode"
               onChange={onChangeHandler}
-              placeholder="Zipcode or city, state"
+              placeholder="Zipcode or City, State"
             />
             <button className={dashboardCss.zipButton} disabled={isSubmitting}>
               Get Forecast

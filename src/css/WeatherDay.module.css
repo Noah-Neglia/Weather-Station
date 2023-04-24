@@ -44,10 +44,9 @@
   .weatherBar {
     width: 150px;
     padding-right: 8px;
-    border: 2px solid #206fba;
     border-radius: 10px;
     outline: none;
-    background: transparent;
+    background-color: #206fba;
     display: flex;
     justify-content: flex-start;
   }
