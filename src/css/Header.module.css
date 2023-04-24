@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #ffffff; /* White background */
+    color: #3f8fd8;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+    border-bottom: 2px solid #3f8fd8; /* Blue border at the bottom */
+  }
+  
+  
+  @media (max-width: 600px) {
+    .container {
+      font-size: 18px;
+    }
+  }
+  

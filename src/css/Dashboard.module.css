@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Set the background color and image for the weather app */
+.weatherBackground {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #89b6e5, #3f8fd8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Center the main container horizontally */
+.boxWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set the dimensions and spacing for the main container */
+.boxContainer {
+  width: 90%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Center the zip form container horizontally */
+.zipFormWrapper {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set the dimensions and spacing for the zip form container */
+.zipFormContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Style the zip code input field */
+.zipInput {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin-right: 10px;
+  color: white;
+  border: 2px solid #206fba;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+/* Style the zip code submit button */
+.zipButton {
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 2px solid #206fba;
+  border-radius: 4px;
+  background-color: #3f8fd8;
+  color: white;
+  cursor: pointer;
+}
+
+/* Change the background color of the zip code button on hover */
+.zipButton:hover {
+  background-color: #89b6e5;
+}
+
+/* Style and align the current location text */
+.currentLoc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currentLoc > h3 {
+  color: white;
+}
+
+/* Center the location container horizontally */
+.locationWrapper {
+  margin-top: 20px;
+  height: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the location text */
+.location {
+  margin-top: 8px;
+  color: white;
+}
+
+/* Style the location error message container */
+.locationError {
+  background-color: #95938b;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style the weather API logo and anchor */
+.weatherApi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+  
+
+  @media (max-width: 600px) {
+    /* Styles for smartphones */
+
+    .currentLocWrapper{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .currentLoc{
+        width: 50%;
+    }
+
+
+    .zipFormContainer{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .zipInput {
+        font-size: 12px;
+        padding: 5px 10px;
+        width: 9rem;
+          
+      }
+
+      
+      .zipButton {
+        font-size: 12px;
+        padding: 5px 10px;
+      }
+
+
+      .currentLoc{
+          font-size: 8pt;
+    }
+
+      .location{
+        margin-top: 2px;
+        font-size: 8pt;
+        margin-bottom: 5px;
+      }
+      
+      .boxContainer{
+        margin-top: 30px;
+     
+    }
+
+    .weatherApi{
+      font-size: 10pt;
+
+    }
+
+    .weatherApi > div > a > img{
+        width: 75px;
+    }
+    
+  }
+
+ 

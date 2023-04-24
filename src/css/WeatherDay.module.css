@@ -1,0 +1,100 @@
+/* Reset default margin, padding, and border for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  /* Center the day info wrapper horizontally and vertically */
+  .dayInfoWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the day info container */
+  .dayInfo {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14pt;
+    color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  /* Style the day text container */
+  .day {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    width: 80px;
+    margin-right: 8px;
+  }
+  
+  /* Set the width of the weather image container */
+  .image {
+    width: 50px;
+  }
+  
+  /* Style the weather bar container */
+  .weatherBar {
+    width: 150px;
+    padding-right: 8px;
+    border: 2px solid #206fba;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* Style the low temperature text */
+  .low {
+    color: rgba(255, 255, 255, 0.413);
+    width: 50px;
+  }
+  
+  /* Style the high temperature text */
+  .high {
+    color: white;
+    width: 50px;
+  }
+  
+  /* Media query for smartphones */
+  @media (max-width: 600px) {
+    /* Styles for smartphones */
+    .dayInfo {
+      font-size: 10pt;
+    }
+  
+    .day {
+      width: 50px;
+    }
+  
+    .image {
+      width: 50px;
+    }
+  
+    .image > img {
+      width: 40px;
+    }
+  
+    .weatherBar {
+      width: 50px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .low {
+      width: 25px;
+    }
+  
+    .high {
+      width: 25px;
+    }
+  }
+  

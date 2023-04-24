@@ -1,0 +1,58 @@
+/* Reset default margin, padding, and border for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  /* Style the box container */
+  .box {
+    width: 100%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #3f8fd8;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the range wrapper horizontally */
+  .rangeWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the forecast range text */
+  .forecastRange {
+    font-size: 15pt;
+    color: rgba(255, 255, 255, 0.413);
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Center the day wrapper horizontally */
+  .dayWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Set the width of the day container */
+  .dayContainer {
+    width: 90%;
+  }
+  
+  /* Media query for smartphones */
+  @media (max-width: 600px) {
+    /* Adjust the font size for the forecast range text on smartphones */
+    .forecastRange {
+      font-size: 10pt;
+    }
+  }
+  
