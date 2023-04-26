@@ -31,7 +31,6 @@ const Dashboard = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         async (position) => {
-          console.log(position);
           const { latitude, longitude } = position.coords;
           const response = await axios.get(
             `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=d53678aef78a432db8cb2dcdb4f50f1f`
@@ -49,14 +48,12 @@ const Dashboard = () => {
             return;
           } else {
             setLoading(false);
-            console.error('Error obtaining geolocation:', error);
           }
           setLoading(false);
         },
         options
       );
     } else {
-      console.error('Geolocation is not supported in this browser.');
       setLoading(false);
     }
   };
@@ -80,7 +77,6 @@ const Dashboard = () => {
       })
       .catch((err) => {
         setLoading(false);
-        console.error('Error fetching weather data:', err);
         setInvalidLocation("Invalid Zipcode, city, or state");
 
         // Clear the error message after 3 seconds
@@ -108,7 +104,6 @@ const Dashboard = () => {
   // Handle input change for the new zip code
   const onChangeHandler = (e) => {
     setNewCode(e.target.value)
-    console.log(newCode)
   }
 
   return (
